@@ -1,0 +1,21 @@
+[https]
+	proxy = socks5://127.0.0.1:7890
+[http]
+	proxy = socks5://127.0.0.1:7890
+[user]
+	name = Facundo Chan
+	email = FacundoChan01@gmail.com
+[core]
+	editor = nvim
+	excludesfile = /Users/chan/.gitignore_global
+	quotepath = false
+[alias]
+  graph = log --all --graph --decorate --oneline
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE "

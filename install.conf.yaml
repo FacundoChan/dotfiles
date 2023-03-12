@@ -3,12 +3,14 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
     ~/.zshrc: zshrc
     ~/.vimrc: vimrc
     ~/.gitignore_global:
+    ~/.gitconfig:
+    ~/.config/nvim:
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

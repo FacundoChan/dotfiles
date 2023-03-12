@@ -93,7 +93,7 @@ Plugin 'vim-scripts/phd'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'Raimondi/delimitMate'
-Plugin 'ycm-core/YouCompleteMe'
+" Plugin 'ycm-core/YouCompleteMe'
 " 插件列表结束
 call vundle#end()
 filetype plugin indent on
