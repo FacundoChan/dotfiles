@@ -25,6 +25,10 @@ unset __conda_setup
 #source ~/.oh-my-zsh/plugins/incr/incr*.zsh
 source ~/.bash_profile
 
+# Proxy
+export https_proxy=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7890
 
 
 
@@ -46,3 +50,6 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /Users/chan/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# OpenAI API key
+export OPENAI_API_KEY="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"
