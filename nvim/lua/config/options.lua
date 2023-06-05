@@ -3,4 +3,10 @@
 -- Add any additional options here
 
 local opt = vim.opt
-opt.relativenumber = false
+opt.relativenumber = true
+
+-- set wrap while using pattern shown below
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = { "*.md", "*.tex" },
+  command = "setlocal wrap",
+})

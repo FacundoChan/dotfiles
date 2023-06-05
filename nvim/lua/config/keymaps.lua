@@ -44,3 +44,21 @@ vim.keymap.set("n", ">", "v>g")
 
 -- jk -> esc
 vim.keymap.set("i", "jk", "<esc>")
+
+-- chatGPT
+vim.keymap.set("n", "<leader>C", ":ChatGPT<CR>", {})
+
+-- change '$' and '^'
+vim.keymap.set("n", "L", "$")
+vim.keymap.set("n", "H", "^")
+
+-- tabular
+vim.keymap.set("v", "<leader>t", ":Tabularize /", { desc = "Tabularize" })
+
+-- Debug
+vim.keymap.set("n", "<F4>", "<cmd>lua require'dap'.terminate()<cr>", { desc = "Terminate debugger" })
+vim.keymap.set("n", "<F5>", "<cmd>lua require'dap'.continue()<cr>", { desc = "Continue debugger" })
+vim.keymap.set("n", "<F6>", "<cmd>lua require'dap'.step_over()<cr>", { desc = "Step over" })
+vim.keymap.set("n", "<F7>", "<cmd>lua require'dap'.step_into()<cr>", { desc = "Step into" })
+vim.keymap.set("n", "<F8>", "<cmd>lua require'dap'.step_out()<cr>", { desc = "Step into" })
+vim.keymap.set("n", "K", "<cmd>lua require'dapui'.eval()<cr>", { desc = "Dap - eval" })
