@@ -11,7 +11,7 @@ export M2_HOME=/Library/apache-maven-3.5.4
 export PATH=$PATH:$M2_HOME/bin
 
 # alias tree="find . -print | sed -e 's;[^/]*/;|_;g;s;_|; |;g'"
-alias ll="ls -alhF"
+alias ll="ls -alhFG"
 alias goland="/usr/local/bin/goland"
 alias nv="nvim"
 

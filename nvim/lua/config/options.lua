@@ -10,3 +10,8 @@ vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.md", "*.tex" },
   command = "setlocal wrap",
 })
+
+-- keep the diagnostic message in insert mode
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+  update_in_insert = true,
+})

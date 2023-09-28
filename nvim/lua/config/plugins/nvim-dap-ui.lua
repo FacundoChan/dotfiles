@@ -35,18 +35,18 @@ function M.setup()
     layouts = {
       {
         elements = {
-          { id = "watches", size = 0.20 },
-          { id = "breakpoints", size = 0.20 },
+          { id = "watches", size = 0.25 }, -- 0.20
+          { id = "breakpoints", size = 0.25 }, -- 0.20
           { id = "stacks", size = 0.25 },
-          { id = "scopes", size = 0.35 },
+          { id = "scopes", size = 0.25 }, -- 0.35
         },
-        size = 40,
+        size = 30, -- 40
         position = "left",
       },
       {
         elements = {
-          { id = "repl", size = 0.5 },
-          { id = "console", size = 0.5 },
+          { id = "repl", size = 0.3 }, --0.5
+          { id = "console", size = 0.3 }, -- 0.5
         },
         size = 14,
         position = "bottom",

@@ -60,5 +60,12 @@ vim.keymap.set("n", "<F4>", "<cmd>lua require'dap'.terminate()<cr>", { desc = "T
 vim.keymap.set("n", "<F5>", "<cmd>lua require'dap'.continue()<cr>", { desc = "Continue debugger" })
 vim.keymap.set("n", "<F6>", "<cmd>lua require'dap'.step_over()<cr>", { desc = "Step over" })
 vim.keymap.set("n", "<F7>", "<cmd>lua require'dap'.step_into()<cr>", { desc = "Step into" })
-vim.keymap.set("n", "<F8>", "<cmd>lua require'dap'.step_out()<cr>", { desc = "Step into" })
+vim.keymap.set("n", "<F8>", "<cmd>lua require'dap'.step_out()<cr>", { desc = "Step out" })
 vim.keymap.set("n", "K", "<cmd>lua require'dapui'.eval()<cr>", { desc = "Dap - eval" })
+
+-- Telescope
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find Files (root dir)" })
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep / Find Text(root dir)" })
+-- vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc=""})
+-- vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
